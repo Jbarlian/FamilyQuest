@@ -10,13 +10,22 @@ import UIKit
 
 class WheelPageVC: UIViewController {
 
+    var pOne:String = ""
+    var pTwo:String = ""
+    var pThree:String = ""
+    var pFour:String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func stopButton(_ sender: Any) {
+        print("Hello")
+        
+    }
+    
     /*
     // MARK: - Navigation
 
