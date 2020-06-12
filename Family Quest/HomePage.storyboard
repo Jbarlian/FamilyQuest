@@ -21,15 +21,16 @@
                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="VAH-mF-LSy">
-                                <rect key="frame" x="57" y="528" width="300" height="125"/>
+                                <rect key="frame" x="57" y="596" width="300" height="125"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Play Button-1"/>
                                 <connections>
+                                    <action selector="playButton:" destination="9Jb-1g-pAD" eventType="touchUpInside" id="DPQ-Md-wps"/>
                                     <segue destination="OHZ-rt-dyP" kind="push" id="7pH-aD-S9d"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="5dk-67-ka4">
-                                <rect key="frame" x="66" y="140" width="282" height="281"/>
+                                <rect key="frame" x="66" y="165" width="282" height="281"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>

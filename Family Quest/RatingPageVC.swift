@@ -7,27 +7,49 @@
 //
 
 import UIKit
+import AVFoundation
 
 class RatingPageVC: UIViewController {
 
+    var audioPlayer:AVAudioPlayer!
+    
     var personToRate:String = ""
+    var numberOfLikes:Int = 0
+    var numberOfDislikes:Int = 0
+    
     @IBOutlet weak var rateLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+         // Do any additional setup after loading the view.
         self.rateLabel.text = "for, \(personToRate)"
-        // Do any additional setup after loading the view.
+       
+        
+        let sound = Bundle.main.path(forResource: "button-tick", ofType: "mp3")
+        do{
+            audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
+        }catch
+        {
+            print(error)
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func dislikeButton(_ sender: Any) {
+        numberOfDislikes += 1
+        print(numberOfDislikes)
+        audioPlayer.play()
     }
-    */
-
+    
+    @IBAction func likeButton(_ sender: Any) {
+        numberOfLikes += 1
+        print(numberOfLikes)
+        audioPlayer.play()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! LeaderboardVC
+        vc.totalLikes = numberOfLikes
+        vc.totalDislikes = numberOfDislikes
+        
+    }
 }

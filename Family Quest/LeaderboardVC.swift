@@ -10,9 +10,19 @@ import UIKit
 
 class LeaderboardVC: UIViewController {
 
+    
+    @IBOutlet weak var likesLabel: UILabel!
+    @IBOutlet weak var dislikesLabel: UILabel!
+    
+    var pOne:String = "James"
+    var totalLikes:Int = 0
+    var totalDislikes:Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        likesLabel.text = "\(totalLikes)"
+        dislikesLabel.text = "\(totalDislikes)"
         // Do any additional setup after loading the view.
     }
     

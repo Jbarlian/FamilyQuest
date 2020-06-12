@@ -7,24 +7,39 @@
 //
 
 import UIKit
+import AVFoundation
 
 class HomePageVC: UIViewController {
 
+    var audioPlayer:AVAudioPlayer!
+    var introMusic:AVAudioPlayer!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        
+        let sound = Bundle.main.path(forResource: "button-click", ofType: "mp3")
+        do{
+            audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
+        }catch
+        {
+            print(error)
+        }
+        
+        let introSound = Bundle.main.path(forResource: "Intro-music", ofType: "mp3")
+        do{
+            introMusic = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: introSound!))
+        }catch
+        {
+            print(error)
+        }
+       
+        introMusic.numberOfLoops = 5
+        introMusic.play()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func playButton(_ sender: Any) {
+        audioPlayer.play()
     }
-    */
-
+    
 }

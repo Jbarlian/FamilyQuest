@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import AVFoundation
 
 class InputPageVC: UIViewController {
 
+    var audioPlayer:AVAudioPlayer!
     
     @IBOutlet weak var textPlayerOne: UITextField!
     @IBOutlet weak var textPlayerTwo: UITextField!
@@ -33,6 +35,13 @@ class InputPageVC: UIViewController {
 
         view.addGestureRecognizer(tapOnScreen)
         
+        let sound = Bundle.main.path(forResource: "button-click", ofType: "mp3")
+        do{
+            audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
+        }catch
+        {
+            print(error)
+        }
     }
     
     @objc func dismissKeyboard() {
@@ -46,6 +55,7 @@ class InputPageVC: UIViewController {
         self.playerThree = textPlayerThree.text!
         self.playerFour = textPlayerFour.text!
         performSegue(withIdentifier: "toWheel", sender: self)
+        audioPlayer.play()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

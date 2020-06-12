@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ChallengePageVC: UIViewController {
 
+    var audioPlayer:AVAudioPlayer!
     
     @IBOutlet weak var randomChallenge: UILabel!
     @IBOutlet weak var selectedLabel: UILabel!
@@ -58,6 +60,13 @@ class ChallengePageVC: UIViewController {
         randomChallenge.text = challenge.randomElement()!
         
         // Do any additional setup after loading the view.
+        let sound = Bundle.main.path(forResource: "button-click", ofType: "mp3")
+        do{
+            audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
+        }catch
+        {
+            print(error)
+        }
     }
     
 
@@ -67,5 +76,8 @@ class ChallengePageVC: UIViewController {
         vc.personToRate = selectedPerson
     }
 
-
+    @IBAction func doneButton(_ sender: Any) {
+        audioPlayer.play()
+    }
+    
 }
