@@ -26,6 +26,10 @@ class WheelPageVC: UIViewController {
         
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! ChallengePageVC
+        vc.selectedPerson = pOne
+    }
     /*
     // MARK: - Navigation
 

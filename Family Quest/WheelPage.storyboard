@@ -15,12 +15,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="28871376" translatesAutoresizingMaskIntoConstraints="NO" id="N0O-Kp-tiW">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K6Z-Xu-kWc">
                                 <rect key="frame" x="57" y="528" width="300" height="125"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Stop Button"/>
+                                <state key="normal" image="Stop Button Copy"/>
                                 <connections>
                                     <action selector="stopButton:" destination="UyB-kE-pci" eventType="touchUpInside" id="cSN-il-lNM"/>
+                                    <segue destination="zmg-55-dVr" kind="push" id="nFJ-Ni-AdM"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -30,10 +36,21 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ndv-uO-nwb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="138"/>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+        <!--ChallengePage-->
+        <scene sceneID="vnB-HU-ICL">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ChallengePage" id="zmg-55-dVr" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="AxG-0e-hKd"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iTT-8y-Gh5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="821" y="24"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Stop Button" width="432" height="182"/>
+        <image name="28871376" width="414" height="896"/>
+        <image name="Stop Button Copy" width="284" height="90"/>
     </resources>
 </document>

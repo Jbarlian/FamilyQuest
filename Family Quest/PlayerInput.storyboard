@@ -15,6 +15,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="28871376" translatesAutoresizingMaskIntoConstraints="NO" id="SSD-aO-58f">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                            </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XgC-Tn-c4H">
                                 <rect key="frame" x="144" y="137" width="250" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -70,7 +75,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jCB-zp-JGg">
                                 <rect key="frame" x="57" y="528" width="300" height="125"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Start Button"/>
+                                <state key="normal" image="Start Button-1"/>
                                 <connections>
                                     <action selector="startButton:" destination="Ixq-rH-j8H" eventType="touchUpInside" id="lWF-QM-7o2"/>
                                 </connections>
@@ -103,6 +108,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Start Button" width="432" height="182"/>
+        <image name="28871376" width="414" height="896"/>
+        <image name="Start Button-1" width="284" height="90"/>
     </resources>
 </document>

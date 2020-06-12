@@ -1,17 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "Play Button.pdf",
+      "filename" : "Logo.pdf",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Play Button@2x.pdf",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Play Button@3x.pdf",
       "idiom" : "universal",
       "scale" : "3x"
     }

@@ -10,8 +10,14 @@ import UIKit
 
 class ChallengePageVC: UIViewController {
 
+    
+    @IBOutlet weak var randomChallenge: UILabel!
+    @IBOutlet weak var selectedLabel: UILabel!
+    
+    var selectedPerson:String = ""
+    
     var challenge:[String] = [
-         "Tell and embarrassing story",
+         "Tell an embarrassing story",
          "Tell your greatest acomplishments",
          "Tell your biggest fear",
          "Do a silly dance for 1 minute",
@@ -47,19 +53,19 @@ class ChallengePageVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.selectedLabel.text = "for, \(selectedPerson)"
+        randomChallenge.text = challenge.randomElement()!
+        
         // Do any additional setup after loading the view.
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        let vc = segue.destination as! RatingPageVC
+        vc.personToRate = selectedPerson
     }
-    */
+
 
 }

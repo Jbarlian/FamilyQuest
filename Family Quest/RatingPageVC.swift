@@ -10,9 +10,12 @@ import UIKit
 
 class RatingPageVC: UIViewController {
 
+    var personToRate:String = ""
+    @IBOutlet weak var rateLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.rateLabel.text = "for, \(personToRate)"
         // Do any additional setup after loading the view.
     }
     

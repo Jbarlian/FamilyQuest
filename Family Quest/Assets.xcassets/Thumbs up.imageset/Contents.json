@@ -1,17 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "Stop Button.pdf",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Stop Button@2x.pdf",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Stop Button@3x.pdf",
+      "filename" : "Thumbs up@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

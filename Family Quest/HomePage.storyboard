@@ -15,14 +15,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="28871376" translatesAutoresizingMaskIntoConstraints="NO" id="hzr-x3-vAq">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="VAH-mF-LSy">
                                 <rect key="frame" x="57" y="528" width="300" height="125"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Play Button"/>
+                                <state key="normal" image="Play Button-1"/>
                                 <connections>
                                     <segue destination="OHZ-rt-dyP" kind="push" id="7pH-aD-S9d"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="5dk-67-ka4">
+                                <rect key="frame" x="66" y="140" width="282" height="281"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Tf3-1N-qLU"/>
@@ -63,6 +72,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Play Button" width="432" height="182"/>
+        <image name="28871376" width="414" height="896"/>
+        <image name="Logo" width="840" height="840"/>
+        <image name="Play Button-1" width="284" height="90"/>
     </resources>
 </document>
