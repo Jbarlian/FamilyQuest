@@ -31,6 +31,7 @@
 		1C2BE2E724938D8500449D8B /* button-click.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1C2BE2E624938D8500449D8B /* button-click.mp3 */; };
 		1C2BE2EA24938F8D00449D8B /* button-tick.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1C2BE2E924938F8D00449D8B /* button-tick.mp3 */; };
 		1C2BE2EC249393E100449D8B /* Intro-music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1C2BE2EB249393E100449D8B /* Intro-music.mp3 */; };
+		1C2BE2EE249398C300449D8B /* GameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2BE2ED249398C300449D8B /* GameData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		1C2BE2E624938D8500449D8B /* button-click.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "button-click.mp3"; sourceTree = "<group>"; };
 		1C2BE2E924938F8D00449D8B /* button-tick.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "button-tick.mp3"; path = "../../../../Downloads/button-tick.mp3"; sourceTree = "<group>"; };
 		1C2BE2EB249393E100449D8B /* Intro-music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Intro-music.mp3"; path = "../../../../Downloads/Intro-music.mp3"; sourceTree = "<group>"; };
+		1C2BE2ED249398C300449D8B /* GameData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				1C2BE2BA2490D69000449D8B /* GameScene.swift */,
 				1C2BE2BC2490D69000449D8B /* GameViewController.swift */,
 				1C2BE2BE2490D69000449D8B /* Main.storyboard */,
+				1C2BE2ED249398C300449D8B /* GameData.swift */,
 				1C2BE2C12490D69100449D8B /* Assets.xcassets */,
 				1C2BE2CE2490D75A00449D8B /* HomePageVC.swift */,
 				1C2BE2D22490D7E100449D8B /* InputPageVC.swift */,
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C2BE2E32490D94000449D8B /* LeaderboardVC.swift in Sources */,
+				1C2BE2EE249398C300449D8B /* GameData.swift in Sources */,
 				1C2BE2DF2490D8CE00449D8B /* RatingPageVC.swift in Sources */,
 				1C2BE2BB2490D69000449D8B /* GameScene.swift in Sources */,
 				1C2BE2D32490D7E100449D8B /* InputPageVC.swift in Sources */,

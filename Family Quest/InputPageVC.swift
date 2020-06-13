@@ -18,10 +18,10 @@ class InputPageVC: UIViewController {
     @IBOutlet weak var textPlayerThree: UITextField!
     @IBOutlet weak var textPlayerFour: UITextField!
     
-    var playerOne: String = ""
-    var playerTwo: String = ""
-    var playerThree: String = ""
-    var playerFour: String = ""
+//    var playerOne: String = ""
+//    var playerTwo: String = ""
+//    var playerThree: String = ""
+//    var playerFour: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,20 +50,27 @@ class InputPageVC: UIViewController {
     
     
     @IBAction func startButton(_ sender: Any) {
-        self.playerOne = textPlayerOne.text!
-        self.playerTwo = textPlayerTwo.text!
-        self.playerThree = textPlayerThree.text!
-        self.playerFour = textPlayerFour.text!
+//        self.playerOne = textPlayerOne.text!
+//        self.playerTwo = textPlayerTwo.text!
+//        self.playerThree = textPlayerThree.text!
+//        self.playerFour = textPlayerFour.text!
+        
+        GameData.names.append(textPlayerOne.text!)
+        GameData.names.append(textPlayerTwo.text!)
+        GameData.names.append(textPlayerThree.text!)
+        GameData.names.append(textPlayerFour.text!)
+        print(GameData.names)
+        
         performSegue(withIdentifier: "toWheel", sender: self)
         audioPlayer.play()
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let vc = segue.destination as! WheelPageVC
-        vc.pOne = self.playerOne
-        vc.pTwo = self.playerTwo
-        vc.pThree = self.playerThree
-        vc.pFour = self.playerFour
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        let vc = segue.destination as! WheelPageVC
+//        vc.pOne = self.playerOne
+//        vc.pTwo = self.playerTwo
+//        vc.pThree = self.playerThree
+//        vc.pFour = self.playerFour
+//    }
 }
  

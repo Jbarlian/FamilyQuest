@@ -16,7 +16,7 @@ class ChallengePageVC: UIViewController {
     @IBOutlet weak var randomChallenge: UILabel!
     @IBOutlet weak var selectedLabel: UILabel!
     
-    var selectedPerson:String = ""
+//    var selectedPerson:String = ""
     
     var challenge:[String] = [
          "Tell an embarrassing story",
@@ -56,7 +56,7 @@ class ChallengePageVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.selectedLabel.text = "for, \(selectedPerson)"
+        self.selectedLabel.text = "for, \(GameData.names[0])"
         randomChallenge.text = challenge.randomElement()!
         
         // Do any additional setup after loading the view.
@@ -71,10 +71,10 @@ class ChallengePageVC: UIViewController {
     
 
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let vc = segue.destination as! RatingPageVC
-        vc.personToRate = selectedPerson
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        let vc = segue.destination as! RatingPageVC
+//        vc.personToRate = selectedPerson
+//    }
 
     @IBAction func doneButton(_ sender: Any) {
         audioPlayer.play()

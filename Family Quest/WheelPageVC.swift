@@ -10,10 +10,10 @@ import UIKit
 
 class WheelPageVC: UIViewController {
 
-    var pOne:String = ""
-    var pTwo:String = ""
-    var pThree:String = ""
-    var pFour:String = ""
+//    var pOne:String = ""
+//    var pTwo:String = ""
+//    var pThree:String = ""
+//    var pFour:String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,10 +33,10 @@ class WheelPageVC: UIViewController {
 //        self.viewController.pOne = "haha"
 //    }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let vc = segue.destination as! ChallengePageVC
-        vc.selectedPerson = pOne
-    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        let vc = segue.destination as! ChallengePageVC
+//        vc.selectedPerson = pOne
+//    }
 
 
 }
