@@ -56,7 +56,7 @@ class ChallengePageVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.selectedLabel.text = "for, \(GameData.names[0])"
+        self.selectedLabel.text = "for, \(GameData.selectedPlayer)"
         randomChallenge.text = challenge.randomElement()!
         
         // Do any additional setup after loading the view.

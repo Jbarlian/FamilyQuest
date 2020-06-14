@@ -12,4 +12,5 @@ struct GameData {
     static var names:[String] = []
     static var likes:[Int] = [0,0,0,0]
     static var dislikes:[Int] = [0,0,0,0]
+    static var selectedPlayer:String = ""
 }

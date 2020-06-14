@@ -10,7 +10,7 @@
         <!--Challenge PageVC-->
         <scene sceneID="SUV-9P-wVA">
             <objects>
-                <viewController id="SGk-Yh-sJy" customClass="ChallengePageVC" customModule="Family_Quest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChallengePageVC" id="SGk-Yh-sJy" customClass="ChallengePageVC" customModule="Family_Quest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fue-Yc-zon">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
