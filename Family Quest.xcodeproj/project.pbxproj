@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1C2BE2B52490D69000449D8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2BE2B42490D69000449D8B /* AppDelegate.swift */; };
-		1C2BE2B72490D69000449D8B /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1C2BE2B62490D69000449D8B /* GameScene.sks */; };
+		1C2BE2B72490D69000449D8B /* GameSceneOld.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1C2BE2B62490D69000449D8B /* GameSceneOld.sks */; };
 		1C2BE2B92490D69000449D8B /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1C2BE2B82490D69000449D8B /* Actions.sks */; };
 		1C2BE2BB2490D69000449D8B /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2BE2BA2490D69000449D8B /* GameScene.swift */; };
 		1C2BE2BD2490D69000449D8B /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2BE2BC2490D69000449D8B /* GameViewController.swift */; };
@@ -32,12 +32,13 @@
 		1C2BE2EA24938F8D00449D8B /* button-tick.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1C2BE2E924938F8D00449D8B /* button-tick.mp3 */; };
 		1C2BE2EC249393E100449D8B /* Intro-music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1C2BE2EB249393E100449D8B /* Intro-music.mp3 */; };
 		1C2BE2EE249398C300449D8B /* GameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2BE2ED249398C300449D8B /* GameData.swift */; };
+		1E0AA16F24962C5D00E086D5 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1E0AA16E24962C5C00E086D5 /* GameScene.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1C2BE2B12490D69000449D8B /* Family Quest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Family Quest.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C2BE2B42490D69000449D8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1C2BE2B62490D69000449D8B /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		1C2BE2B62490D69000449D8B /* GameSceneOld.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameSceneOld.sks; sourceTree = "<group>"; };
 		1C2BE2B82490D69000449D8B /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		1C2BE2BA2490D69000449D8B /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		1C2BE2BC2490D69000449D8B /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +63,7 @@
 		1C2BE2E924938F8D00449D8B /* button-tick.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "button-tick.mp3"; path = "../../../../Downloads/button-tick.mp3"; sourceTree = "<group>"; };
 		1C2BE2EB249393E100449D8B /* Intro-music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Intro-music.mp3"; path = "../../../../Downloads/Intro-music.mp3"; sourceTree = "<group>"; };
 		1C2BE2ED249398C300449D8B /* GameData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameData.swift; sourceTree = "<group>"; };
+		1E0AA16E24962C5C00E086D5 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				1C2BE2B42490D69000449D8B /* AppDelegate.swift */,
-				1C2BE2B62490D69000449D8B /* GameScene.sks */,
+				1C2BE2B62490D69000449D8B /* GameSceneOld.sks */,
+				1E0AA16E24962C5C00E086D5 /* GameScene.sks */,
 				1C2BE2B82490D69000449D8B /* Actions.sks */,
 				1C2BE2BA2490D69000449D8B /* GameScene.swift */,
 				1C2BE2BC2490D69000449D8B /* GameViewController.swift */,
@@ -193,7 +196,8 @@
 				1C2BE2C02490D69000449D8B /* Main.storyboard in Resources */,
 				1C2BE2E12490D92A00449D8B /* Leaderboard.storyboard in Resources */,
 				1C2BE2D92490D87A00449D8B /* ChallengePage.storyboard in Resources */,
-				1C2BE2B72490D69000449D8B /* GameScene.sks in Resources */,
+				1C2BE2B72490D69000449D8B /* GameSceneOld.sks in Resources */,
+				1E0AA16F24962C5D00E086D5 /* GameScene.sks in Resources */,
 				1C2BE2CD2490D6C700449D8B /* HomePage.storyboard in Resources */,
 				1C2BE2EC249393E100449D8B /* Intro-music.mp3 in Resources */,
 				1C2BE2EA24938F8D00449D8B /* button-tick.mp3 in Resources */,

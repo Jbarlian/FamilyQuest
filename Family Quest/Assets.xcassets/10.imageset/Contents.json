@@ -1,17 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "Wood-Background.pdf",
+      "filename" : "10.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Wood-Background@2x.pdf",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Wood-Background@3x.pdf",
       "idiom" : "universal",
       "scale" : "3x"
     }

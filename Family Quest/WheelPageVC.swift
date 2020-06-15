@@ -7,36 +7,65 @@
 //
 
 import UIKit
+import SpriteKit
+import GameplayKit
+import AVFoundation
 
 class WheelPageVC: UIViewController {
-
-//    var pOne:String = ""
-//    var pTwo:String = ""
-//    var pThree:String = ""
-//    var pFour:String = ""
+    
+    var gameInfo: [String]?
+    var gameScene: GameScene!
+    var gameScene2: GameScene!
+    var pemain:String = "Ha"
+    var audioPlayer:AVAudioPlayer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-    
-    @IBAction func stopButton(_ sender: Any) {
-        print("Hello")
+        gameScene = SKScene(fileNamed: "GameScene") as? GameScene
+        if let view = self.view as! SKView? {
+            // Load the SKScene from 'GameScene.sks'
+            if let scene = SKScene(fileNamed: "GameScene") {
+                // Set the scale mode to scale to fit the window
+                scene.scaleMode = .aspectFill
+                // Present the scene
+                scene.userData = NSMutableDictionary()
+                gameInfo = GameData.names
+                scene.userData?.setObject(gameInfo ?? "", forKey: "gameInfo" as NSCopying)
+                view.presentScene(scene)
+            }
+            
+            view.ignoresSiblingOrder = true
+            view.showsFPS = true
+            view.showsNodeCount = true
+        }
         
+        let sound = Bundle.main.path(forResource: "button-click", ofType: "mp3")
+        do{
+            audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
+        }catch
+        {
+            print(error)
+        }
+       
     }
     
-//    var viewController : LeaderboardVC! //destination
-//    let appDelegate = UIApplication.shared.delegate as! AppDelegate
-//    if let vc = appDelegate.window?.rootViewController{
-//        self.viewController = vc as? LeaderboardVC
-//        self.viewController.pOne = "haha"
-//    }
+    @IBAction func nextPage(_ sender: Any) {
+        if let vc = UIStoryboard(name: "ChallengePage", bundle: nil).instantiateViewController(withIdentifier: "ChallengePageVC") as? ChallengePageVC
+        {
+            vc.modalPresentationStyle = .fullScreen
+            //present(vc, animated: true, completion: nil)
+            if let navigator = navigationController {
+            navigator.pushViewController(vc, animated: true)
+            }
+        }
+        
+        audioPlayer.play()
+    }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        let vc = segue.destination as! ChallengePageVC
-//        vc.selectedPerson = pOne
+//    @IBAction func stopButton(_ sender: Any) {
+//        print("Hello")
 //    }
-
-
+//
+    
+    
 }

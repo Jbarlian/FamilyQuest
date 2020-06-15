@@ -17,6 +17,7 @@ class HomePageVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.navigationController?.isNavigationBarHidden = true
         
         let sound = Bundle.main.path(forResource: "button-click", ofType: "mp3")
         do{
@@ -35,6 +36,7 @@ class HomePageVC: UIViewController {
         }
        
         introMusic.numberOfLoops = 5
+        introMusic.volume = 0.25
         introMusic.play()
     }
     

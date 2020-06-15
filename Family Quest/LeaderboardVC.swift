@@ -67,5 +67,15 @@ class LeaderboardVC: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    @IBAction func exitButton(_ sender: Any) {
+        if let vc = UIStoryboard(name: "HomePage", bundle: nil).instantiateViewController(withIdentifier: "HomePageVC") as? HomePageVC
+        {
+            vc.modalPresentationStyle = .fullScreen
+            //present(vc, animated: true, completion: nil)
+            if let navigator = navigationController {
+            navigator.pushViewController(vc, animated: true)
+            }
+        }
+    }
+    
 }
