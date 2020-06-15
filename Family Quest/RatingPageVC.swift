@@ -12,8 +12,9 @@ import AVFoundation
 class RatingPageVC: UIViewController {
 
     var audioPlayer:AVAudioPlayer!
+    var index:Int!
     
-    var personToRate:String = GameData.names[1]
+    var personToRate:String = GameData.selectedPlayer
 //    var numberOfLikes:Int = 0
 //    var numberOfDislikes:Int = 0
     
@@ -22,7 +23,10 @@ class RatingPageVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
          // Do any additional setup after loading the view.
-        self.rateLabel.text = "for, \(GameData.names[0])"
+        
+        index = GameData.names.firstIndex(of: GameData.selectedPlayer)!
+        
+        self.rateLabel.text = "for, \(GameData.names[index])"
        
         
         let sound = Bundle.main.path(forResource: "button-tick", ofType: "mp3")
@@ -35,20 +39,20 @@ class RatingPageVC: UIViewController {
     }
     
     @IBAction func dislikeButton(_ sender: Any) {
-        if personToRate == GameData.names[1]{
-            GameData.dislikes[1] += 1
+        if personToRate == GameData.names[index]{
+            GameData.dislikes[index] += 1
         }
-        print(GameData.dislikes[1])
+        print(GameData.dislikes[index])
         
         
         audioPlayer.play()
     }
     
     @IBAction func likeButton(_ sender: Any) {
-        if personToRate == GameData.names[1]{
-            GameData.likes[1] += 1
+        if personToRate == GameData.names[index]{
+            GameData.likes[index] += 1
         }
-        print(GameData.likes[1])
+        print(GameData.likes[index])
         
         
 //        numberOfLikes += 1
