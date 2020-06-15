@@ -21,18 +21,18 @@
                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fea-vE-gHr">
-                                <rect key="frame" x="284" y="458" width="100" height="100"/>
+                                <rect key="frame" x="274" y="454" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" image="Thumbs up"/>
+                                <state key="normal" image="Thumbs up Button"/>
                                 <connections>
                                     <action selector="likeButton:" destination="ROw-hq-wVF" eventType="touchUpInside" id="6a3-d7-hgd"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zDh-2I-64g">
-                                <rect key="frame" x="30" y="459" width="100" height="100"/>
+                                <rect key="frame" x="40" y="455" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Thumbs down"/>
+                                <state key="normal" image="Thumbs down button"/>
                                 <connections>
                                     <action selector="dislikeButton:" destination="ROw-hq-wVF" eventType="touchUpInside" id="8nf-i9-9t8"/>
                                 </connections>
@@ -91,8 +91,8 @@
     </scenes>
     <resources>
         <image name="28871376" width="414" height="896"/>
-        <image name="Thumbs down" width="29" height="32"/>
-        <image name="Thumbs up" width="28" height="31"/>
+        <image name="Thumbs down button" width="108" height="108"/>
+        <image name="Thumbs up Button" width="108" height="108"/>
         <image name="done Button Copy 2" width="284" height="90"/>
     </resources>
 </document>

@@ -28,7 +28,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HZ8-si-103">
                                 <rect key="frame" x="64" y="668" width="286" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Stop Button Copy"/>
+                                <state key="normal" title="Button" image="Next Button"/>
                                 <connections>
                                     <action selector="nextPage:" destination="5Bc-bA-ot1" eventType="touchUpInside" id="cxT-Nq-LhP"/>
                                 </connections>
@@ -44,6 +44,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Stop Button Copy" width="284" height="90"/>
+        <image name="Next Button" width="284" height="90"/>
     </resources>
 </document>

@@ -51,10 +51,10 @@ class WheelPageVC: UIViewController {
         
     }
     
-    @IBAction func stopButton(_ sender: Any) {
-        print("Hello")
-    }
-    
+//    @IBAction func stopButton(_ sender: Any) {
+//        print("Hello")
+//    }
+//
     
     
 }

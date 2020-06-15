@@ -72,5 +72,7 @@ class InputPageVC: UIViewController {
 //        vc.pThree = self.playerThree
 //        vc.pFour = self.playerFour
 //    }
+    @IBAction func dismissButton(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)    }
 }
  

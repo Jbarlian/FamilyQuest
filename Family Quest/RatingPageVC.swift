@@ -13,6 +13,7 @@ class RatingPageVC: UIViewController {
 
     var audioPlayer:AVAudioPlayer!
     var index:Int!
+    var totalClicks:Int = 3
     
     var personToRate:String = GameData.selectedPlayer
 //    var numberOfLikes:Int = 0

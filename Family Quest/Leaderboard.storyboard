@@ -140,6 +140,22 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JMv-lo-snN">
+                                <rect key="frame" x="65" y="650" width="284" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Play Again"/>
+                                <connections>
+                                    <segue destination="VvJ-cc-5cI" kind="push" id="nzX-Wj-0vO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4qJ-Fp-64K">
+                                <rect key="frame" x="20" y="44" width="58" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="x button"/>
+                                <connections>
+                                    <action selector="exitButton:" destination="mm1-Ee-Ibf" eventType="touchUpInside" id="xgm-o2-d3v"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="L5G-tV-vVB"/>
@@ -163,11 +179,23 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
+        <!--WheelPage-->
+        <scene sceneID="rri-lP-uRc">
+            <objects>
+                <viewControllerPlaceholder storyboardName="WheelPage" id="VvJ-cc-5cI" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="5eP-UK-TzJ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kNs-U9-J9k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="635" y="124"/>
+        </scene>
     </scenes>
     <resources>
         <image name="28871376" width="414" height="896"/>
         <image name="Leader board &quot;board&quot;" width="339" height="397"/>
+        <image name="Play Again" width="284" height="90"/>
         <image name="Thumbs down" width="29" height="32"/>
         <image name="Thumbs up" width="28" height="31"/>
+        <image name="x button" width="58" height="58"/>
     </resources>
 </document>
