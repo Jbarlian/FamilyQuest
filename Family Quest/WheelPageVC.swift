@@ -9,7 +9,7 @@
 import UIKit
 import SpriteKit
 import GameplayKit
-
+import AVFoundation
 
 class WheelPageVC: UIViewController {
     
@@ -17,6 +17,7 @@ class WheelPageVC: UIViewController {
     var gameScene: GameScene!
     var gameScene2: GameScene!
     var pemain:String = "Ha"
+    var audioPlayer:AVAudioPlayer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +38,15 @@ class WheelPageVC: UIViewController {
             view.showsFPS = true
             view.showsNodeCount = true
         }
+        
+        let sound = Bundle.main.path(forResource: "button-click", ofType: "mp3")
+        do{
+            audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
+        }catch
+        {
+            print(error)
+        }
+       
     }
     
     @IBAction func nextPage(_ sender: Any) {
@@ -49,6 +59,7 @@ class WheelPageVC: UIViewController {
             }
         }
         
+        audioPlayer.play()
     }
     
 //    @IBAction func stopButton(_ sender: Any) {

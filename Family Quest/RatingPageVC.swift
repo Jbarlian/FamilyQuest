@@ -12,8 +12,9 @@ import AVFoundation
 class RatingPageVC: UIViewController {
 
     var audioPlayer:AVAudioPlayer!
+    var buttonClick:AVAudioPlayer!
     var index:Int!
-    var totalClicks:Int = 3
+//    var totalClicks:Int = 3
     
     var personToRate:String = GameData.selectedPlayer
 //    var numberOfLikes:Int = 0
@@ -35,6 +36,14 @@ class RatingPageVC: UIViewController {
             audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
         }catch
         {
+            print(error)
+        }
+        
+        let click = Bundle.main.path(forResource: "button-click", ofType: "mp3")
+        do{
+            buttonClick = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: click!))
+        }
+        catch{
             print(error)
         }
     }
@@ -61,7 +70,10 @@ class RatingPageVC: UIViewController {
         audioPlayer.play()
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    @IBAction func doneButton(_ sender: Any) {
+        buttonClick.play()
+    }
+    //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 //        let vc = segue.destination as! LeaderboardVC
 //        vc.totalLikes = numberOfLikes
 //        vc.totalDislikes = numberOfDislikes

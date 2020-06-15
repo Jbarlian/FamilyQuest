@@ -63,6 +63,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="done Button Copy 2"/>
                                 <connections>
+                                    <action selector="doneButton:" destination="ROw-hq-wVF" eventType="touchUpInside" id="RKG-Vn-RcQ"/>
                                     <segue destination="6mB-1a-bL1" kind="push" id="AKg-1g-VlB"/>
                                 </connections>
                             </button>
